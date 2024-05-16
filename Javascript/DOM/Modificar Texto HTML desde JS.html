@@ -1,0 +1,11 @@
+<div>
+  <p id="Parrafo">Hola</p>
+</div>
+<script type="text/javascript">
+  saludo = document.getElementById("Parrafo");
+  alert (saludo.innerText);
+  respuesta = prompt ("¿Usted es del glorioso Rosario Central?").toLowerCase();
+  if (respuesta == "si"){
+    saludo.innerText = "Hola Canaya"
+  }
+</script>

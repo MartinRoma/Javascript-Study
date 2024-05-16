@@ -1,0 +1,11 @@
+<div id="DivconParrafo">
+  <p>Hola</p>
+</div>
+<script type="text/javascript">
+  div = document.getElementById("DivconParrafo");
+  alert (div.innerHTML);
+  let preg = prompt("¿Le gustaria su saludo resaltado?").toLowerCase();
+  if (preg=="si"){
+  div.innerHTML = "<p><strong>Hola</strong></p>";
+  }
+</script>
