@@ -1,0 +1,18 @@
+<body id="body">
+  <title>Los Simpson</title>
+  <h1>Familia Simpson</h1>
+</body>
+<script type="text/javascript">
+  let padre = document.getElementById("body");
+  let familiares = [];
+  let respuesta = " ";
+  while (respuesta != ""){
+    respuesta = prompt ("Ingrese familiar");
+    familiares.push(respuesta);
+  }
+  for (const familiar of familiares){
+      let agregado = document.createElement("p");
+      agregado.innerHTML = `<h4>${familiar}</h4>`;
+      document.body.append (agregado);
+  }
+</script>
