@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>onchange</title>
+  </head>
+  <body>
+    <input id="Nombre" type="text">
+    <input type="number" id="Edad">
+    <script type="text/javascript">
+      let Nombre = document.getElementById ("Nombre");
+      let Edad = document.getElementById ("Edad");
+      Nombre.onchange = () => {
+        alert (`Nuevo Nombre: ${Nombre.value}`);
+      };
+      Edad.onchange = () => {
+        alert (`Nueva Edad: ${Edad.value}`);
+      };
+    </script>
+  </body>
+</html>

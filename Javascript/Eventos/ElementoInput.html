@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" id="Nombre">
+    <script type="text/javascript">
+      let Nombre = document.getElementById ("Nombre");
+      Nombre.addEventListener (`input`, () => { // Se hace un addEventListener para trackear cambios en el input y ejecutar la respeusta
+        alert ("Cambio Input");
+      });
+    </script>
+  </body>
+</html>
