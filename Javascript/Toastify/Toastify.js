@@ -22,3 +22,13 @@ boton.addEventListener("click",() => {
     }
   }).showToast();
 });
+
+const boton2 = document.getElementById("Boton2");
+boton2.addEventListener("click",() => {
+  Toastify({
+    text:"Click aqui para ir a Youtube",
+    duration: 3000,
+    destination: "https://www.youtube.com/",
+    newWindow: true
+  }).showToast();
+});
