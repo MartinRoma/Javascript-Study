@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      /* Styling for the popup */
+      .popup {
+        display: none; /* Initially hidden */
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .popup-active {
+        display: block; /* Show the popup */
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" name="button" id="Boton">Show Popup</button>
+    <span id="Popup" class="popup">Popup Text</span>
+    <script src="setTimeout.js">
+
+    </script>
+  </body>
+</html>
