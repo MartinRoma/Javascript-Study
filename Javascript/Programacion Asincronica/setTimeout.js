@@ -19,5 +19,14 @@ for( let letra of "mundo"){
     console.log(letra)
   },3500);
 };
-/*El setTimeout aplicara un delay para el console.log de cada letra pero al estar en un buble for todas las acciones se ejecutan
+/*El setTimeout aplicara un delay para el console.log de cada letra pero al estar en un bucle for todas las acciones se ejecutan
 al mismo tiempo por lo que solo apareceran todas las letras juntas despues del delay puesto 1 seg para hola y 3,5 para mundo */
+
+
+  let x = prompt("Ingrese 0 para no timeout");
+  const fin = setTimeout(() => {
+    console.log("Times");
+  },5000)
+  if (x == 0){ // Si el usuario escribe 0 el timeout no se hara y todo lo que esta adentro tampoco se ejecutara
+    clearTimeout(fin);
+  }

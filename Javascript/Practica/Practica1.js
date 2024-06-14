@@ -1,7 +1,7 @@
 function palindromo(palabra){
   let mitad = Math.floor(palabra.length/2);
   let bandera = 0;
-  for(let contadorInicio = 0, contadorFinal = palabra.length - 1; contadorInicio <= mitad && bandera < 2; contadorInicio++, contadorFinal--){
+  for(let contadorInicio = 0, contadorFinal = palabra.length - 1; contadorInicio <= mitad && bandera < 2 && contadorFinal >= mitad; contadorInicio++, contadorFinal--){
     if(palabra[contadorInicio] != palabra[contadorFinal]){
       bandera++;
       let contadorInicioAux = contadorInicio + 1;
